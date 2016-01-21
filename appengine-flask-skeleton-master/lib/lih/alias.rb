@@ -33,7 +33,16 @@
 
 
 
+# File lib/lih/alias.rb, line 36
+def initialize(text, old_name, new_name, comment, bola = false)
+  super()
 
+  @text = text
+  @singleton = bola
+  @old_name = old_name
+  @new_name = new_name
+  self.comment = comment
+end
 
 
 
